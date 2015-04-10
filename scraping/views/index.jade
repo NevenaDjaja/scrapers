@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  form(action='/scrape', method='POST', id="home-form")
+    .text_input
+      input(type='text', name='url', id='url', autocomplete='off')
+    .submit-banner
+      input(type='submit', value='Go!',id='go-button')
+
+  
